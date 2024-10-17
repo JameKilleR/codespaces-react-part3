@@ -33,8 +33,7 @@ export default function Shop() {
             });
     }, []);
 
-    const [cart, setCart] = useState([]);
-
+    const [cart, setCart] = useState([]);+
     function addCart(item) {
         setCart([...cart, { id: item.id, name: item.name, price: item.price, img: item.img }]);
     }
